@@ -1,0 +1,39 @@
+>>> Warning 203 "C:\Users\orlando\Desktop\Proyectos pic C\PLop\practica 7 (terminada)2\ds1307.c" Line 108(1,1): Condition always TRUE
+>>> Warning 202 "7 protocolo.c" Line 19(18,21): Variable never used:   con
+>>> Warning 202 "7 protocolo.c" Line 21(5,10): Variable never used:   meses
+>>> Warning 202 "7 protocolo.c" Line 27(5,12): Variable never used:   bandera
+>>> Warning 202 "7 protocolo.c" Line 27(15,16): Variable never used:   c
+>>> Warning 202 "7 protocolo.c" Line 28(8,16): Variable never used:   medicion
+>>> Warning 202 "7 protocolo.c" Line 28(22,27): Variable never used:   Proof
+>>> Warning 202 "7 protocolo.c" Line 29(8,19): Variable never used:   temperatura
+>>> Warning 202 "7 protocolo.c" Line 29(23,35): Variable never used:   temperatura2
+>>> Warning 202 "7 protocolo.c" Line 29(39,50): Variable never used:   resolucion1
+>>> Warning 202 "7 protocolo.c" Line 29(59,70): Variable never used:   resolucion2
+>>> Warning 202 "7 protocolo.c" Line 29(79,83): Variable never used:   div1
+>>> Warning 202 "7 protocolo.c" Line 29(87,91): Variable never used:   div2
+>>> Warning 202 "7 protocolo.c" Line 29(95,106): Variable never used:   resolucion3
+>>> Warning 202 "7 protocolo.c" Line 29(115,119): Variable never used:   div3
+>>> Warning 202 "7 protocolo.c" Line 29(122,126): Variable never used:   off1
+>>> Warning 202 "7 protocolo.c" Line 29(129,133): Variable never used:   off2
+>>> Warning 202 "7 protocolo.c" Line 29(136,140): Variable never used:   off3
+>>> Warning 202 "7 protocolo.c" Line 29(143,146): Variable never used:   off
+>>> Warning 202 "7 protocolo.c" Line 30(5,13): Variable never used:   posicion
+>>> Warning 202 "7 protocolo.c" Line 30(17,30): Variable never used:   valorElegido2
+>>> Warning 202 "7 protocolo.c" Line 30(34,47): Variable never used:   valorElegido3
+>>> Warning 202 "7 protocolo.c" Line 31(5,9): Variable never used:   mask
+>>> Warning 202 "7 protocolo.c" Line 31(16,21): Variable never used:   nivel
+>>> Warning 202 "7 protocolo.c" Line 31(25,27): Variable never used:   ok
+>>> Warning 202 "7 protocolo.c" Line 31(31,43): Variable never used:   valorElegido
+>>> Warning 202 "7 protocolo.c" Line 31(47,55): Variable never used:   banVenti
+>>> Warning 202 "7 protocolo.c" Line 31(59,65): Variable never used:   cancel
+>>> Warning 202 "7 protocolo.c" Line 31(69,75): Variable never used:   banMAs
+>>> Warning 202 "7 protocolo.c" Line 31(79,80): Variable never used:   x
+>>> Warning 202 "7 protocolo.c" Line 31(84,92): Variable never used:   banMenos
+>>> Warning 202 "7 protocolo.c" Line 31(96,105): Variable never used:   posicion2
+>>> Warning 202 "7 protocolo.c" Line 31(109,113): Variable never used:   lim1
+>>> Warning 202 "7 protocolo.c" Line 31(118,122): Variable never used:   lim2
+>>> Warning 202 "7 protocolo.c" Line 31(127,131): Variable never used:   lim3
+>>> Warning 202 "7 protocolo.c" Line 31(136,140): Variable never used:   lim4
+>>> Warning 202 "7 protocolo.c" Line 32(5,18): Variable never used:   sensorElegido
+      Memory usage:   ROM=11%      RAM=9% - 11%
+      0 Errors,  37 Warnings.

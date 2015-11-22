@@ -1,0 +1,218 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @SCRATCH
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017     @INTERRUPT_AREA
+018-01F v
+020     cont
+021     op
+022     con
+023     flag
+024     ver
+025     hor
+026     min
+027     seg
+028     dia
+029     mes
+02A     ano
+02B     diasem
+02C-037 meses
+038     act
+039     oc
+03A.0   timer
+03B     bandera
+03C     c
+03D-040 medicion
+041-044 Proof
+045-048 temperatura
+049-04C temperatura2
+04D-050 resolucion1
+051-054 resolucion2
+055-058 div1
+059-05C div2
+05D-060 resolucion3
+061-064 div3
+065-068 off1
+069-06C off2
+06D-070 off3
+071-074 off
+075     posicion
+076     valorElegido2
+077     valorElegido3
+078     mask
+079     nivel
+07A     ok
+07B     valorElegido
+07C     banVenti
+07D     cancel
+07E     banMAs
+07F     x
+080     banMenos
+081     posicion2
+082     lim1
+083     lim2
+084     lim3
+085     lim4
+086     sensorElegido
+087     contadorLec
+088     Lect
+089-08A @ITOF.P1
+089     setTime.day
+089     lcd_init.i
+089     getDate.@SCRATCH
+089     getTime.@SCRATCH
+089     MAIN.@SCRATCH
+08A     setTime.mth
+08A     getDate.@SCRATCH
+08A     getTime.@SCRATCH
+08A     lcd_init.@SCRATCH
+08A     MAIN.@SCRATCH
+08B     setTime.year
+08B     lcd_init.@SCRATCH
+08B     MAIN.@SCRATCH
+08C     setTime.dow
+08C     MAIN.@SCRATCH
+08D     setTime.hr
+08D     @I2C_READ_1.P1
+08D     MAIN.@SCRATCH
+08E-091 @PRINTF_L32D_112FPFPF.P1
+08E     setTime.min
+08E     @I2C_READ_1.@SCRATCH
+08F     setTime.sec
+08F     bcd2bin.bcd_value
+08F     @I2C_READ_1.@SCRATCH
+090     bin2bcd.binary_value
+090     bcd2bin.temp
+090     setTime.@SCRATCH
+091     bin2bcd.temp
+091     @I2C_WRITE_1.P1
+091     bcd2bin.@SCRATCH
+092     bin2bcd.retval
+092     @PRINTF_L32D_112FPFPF.P1
+093     @PRINTF_L32D_112FPFPF.@SCRATCH
+094     @PRINTF_L32D_112FPFPF.@SCRATCH
+095     @PRINTF_L32D_112FPFPF.@SCRATCH
+096     @PRINTF_L32D_112FPFPF.@SCRATCH
+097     @PRINTF_L32D_112FPFPF.@SCRATCH
+098     @PRINTF_L32D_112FPFPF.@SCRATCH
+099     @PRINTF_L32D_112FPFPF.@SCRATCH
+09A     @PRINTF_L32D_112FPFPF.@SCRATCH
+09B-09E @DIV3232.P1
+09B-09E @MULFF.P2
+09B     lcd_putc.c
+09B-09E @FTOSD.P1
+09C     lcd_gotoxy.x
+09C     @delay_ms2.P1
+09D     lcd_gotoxy.y
+09E     lcd_gotoxy.address
+09F-0A2 @MULFF.P1
+09F-0A2 @DIV3232.P2
+09F     lcd_gotoxy.@SCRATCH
+09F     @FTOSD.@SCRATCH
+0A0     lcd_send_byte.address
+0A1     lcd_send_byte.n
+0A2     lcd_read_byte.low
+0A2     lcd_send_byte.@SCRATCH
+0A3     lcd_send_nibble.n
+0A3     lcd_read_byte.high
+0A3     @MULFF.@SCRATCH
+0A3     @DIV3232.@SCRATCH
+0A4     lcd_read_byte.@SCRATCH
+0A4     @MULFF.@SCRATCH
+0A4     @DIV3232.@SCRATCH
+0A5     @MULFF.@SCRATCH
+0A5     @DIV3232.@SCRATCH
+0A6     @DIV3232.@SCRATCH
+0A7     @DIV3232.@SCRATCH
+0A8     serial_isr.@SCRATCH
+0A8     isr_intrb.@SCRATCH
+0A9     serial_isr.@SCRATCH
+F83     PSP_DATA
+F83     lcd
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB-FBC CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE-FBF CCP_1
+FBF     CCP_1_HIGH
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+0222  @I2C_READ_1
+01DA  @I2C_WRITE_1
+0394  setTime
+0A2E  getDate
+0AD8  getTime
+0370  bin2bcd
+0442  bcd2bin
+026A  @delay_ms2
+00B6  @const92
+02AA  lcd_read_byte
+0292  lcd_send_nibble
+02E2  lcd_send_byte
+0318  lcd_init
+0468  lcd_gotoxy
+04C0  lcd_putc
+0142  TIMER0_isr
+0166  serial_isr
+0196  isr_intrb
+0830  MAIN
+00D4  @const208
+048A  @ITOF
+0504  @MULFF
+05F8  @FTOSD
+0638  @DIV3232
+06B2  @PRINTF_L32D_112FPFPF
+00FA  @const227
+0DC4  @goto10355
+0830  @cinit
+
+Project Files:
+    7 protocolo.c
+    ..\..\..\..\..\..\Program Files (x86)\PICC\devices\18f4520.h
+    ds1307.c
+    ..\..\..\..\..\..\Program Files (x86)\PICC\drivers\LCD.C
+
+Units:
+    C:\Users\orlando\Desktop\Proyectos pic C\PLop\practica 7 (terminada)2\7 protocolo.c (main)
+
+Compiler Settings:
+    Processor:      PIC18F4520
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      0
+    Short,Int,Long: 1,8,16
+
+Output Files:
+    Errors:      C:\Users\orlando\Desktop\Proyectos pic C\PLop\practica 7 (terminada)2\7 protocolo.err
+    Ext Symbols: C:\Users\orlando\Desktop\Proyectos pic C\PLop\practica 7 (terminada)2\7 protocolo.esym
+    INHX32:      C:\Users\orlando\Desktop\Proyectos pic C\PLop\practica 7 (terminada)2\7 protocolo.hex
+    Symbols:     C:\Users\orlando\Desktop\Proyectos pic C\PLop\practica 7 (terminada)2\7 protocolo.sym
+    List:        C:\Users\orlando\Desktop\Proyectos pic C\PLop\practica 7 (terminada)2\7 protocolo.lst
+    Debug/COFF:  C:\Users\orlando\Desktop\Proyectos pic C\PLop\practica 7 (terminada)2\7 protocolo.cof
+    Call Tree:   7 protocolo.tre
+    Statistics:  7 protocolo.sta

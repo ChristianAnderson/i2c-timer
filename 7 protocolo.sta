@@ -1,0 +1,102 @@
+
+ROM used: 3564 (11%)
+          3564 (11%) including unused fragments
+
+          4 Average locations per line
+          15 Average locations per statement
+
+RAM used: 142 (9%) at main() level
+          170 (11%) worst case
+
+Stack used: 6 worst case (out of 30 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  189   101  44  7 protocolo.c
+  428     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\devices\18f4520.h
+  142    67  29  ds1307.c
+  168    63  27  ..\..\..\..\..\..\Program Files (x86)\PICC\drivers\LCD.C
+----- -----
+  927   231 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     72   1   3             @I2C_READ_1
+0     72   1   1             @I2C_WRITE_1
+0    174   2   8   503  2.7  setTime
+ Inline        6   383  3.1  getDate
+ Inline        5   315  3.0  getTime
+0     36   1   3   240  6.0  bin2bcd
+0     38   1   3   155  4.7  bcd2bin
+0     40   1   1             @delay_ms2
+0     30   0   0             @const92
+0     56   1   3   463  4.3  lcd_read_byte
+0     24   0   1   134  2.2  lcd_send_nibble
+0     54   1   3   317  4.3  lcd_send_byte
+0     88   1   3   422  4.7  lcd_init
+0     34   0   4   186  5.5  lcd_gotoxy
+0     68   1   1   272  4.1  lcd_putc
+0     36   1   0   186  3.1  TIMER0_isr
+0     48   1   2   134  3.8  serial_isr
+0     68   1   1   346  3.3  isr_intrb
+0   1428  20   5  2654  9.1  MAIN
+0     38   1   0             @const208
+0     54   1   2             @ITOF
+0    244   3  11             @MULFF
+0     64   1   5             @FTOSD
+0    122   2  13             @DIV3232
+0    382   5  13             @PRINTF_L32D_112FPFPF
+0     72   1   0             @const227
+0     44   1   0             @goto10355
+
+Program metrics:
+    Functions               15
+    Statements              231
+    Comments                213
+    Volume (V)              10699
+    Difficilty (D)          63.9
+    Effort to implement (E) 683424
+    Time to implement (T)   10 hours, 33 minutes
+    Est Delivered Bugs (B)  3
+    Cyclomatic Complexity   28
+    Maintainability (MI)    71
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-000B4   174  0  
+000B6-07FFE  3386  29200  
+
+
+
+THE FOLLOWING IS TEMPORARY FOR DIAGNOSTIC USE ONLY:
+
+    n1    n2    N1    N2   v(G)
+     0     1     0     0     0    @I2C_READ_1
+     0     1     0     0     0    @I2C_WRITE_1
+     5    43    43    47     0    setTime
+     6    32    40    33     0    getDate
+     6    28    34    28     0    getTime
+    12    20    28    20     1    bin2bcd
+    10    16    18    15     0    bcd2bin
+     0     1     0     0     0    @delay_ms2
+     0     1     0     0     0    @const92
+     9    41    43    39     0    lcd_read_byte
+     5    17    15    15     0    lcd_send_nibble
+     9    30    31    29     0    lcd_send_byte
+    10    37    41    35     2    lcd_init
+    11    19    19    19     1    lcd_gotoxy
+     9    22    35    20     4    lcd_putc
+     7    18    24    16     2    TIMER0_isr
+     9    13    19    11     1    serial_isr
+     7    29    40    27     5    isr_intrb
+    18   155   200   157    12    MAIN
+     0     1     0     0     0    @const208
+     0     1     0     0     0    @ITOF
+     0     1     0     0     0    @MULFF
+     0     1     0     0     0    @FTOSD
+     0     1     0     0     0    @DIV3232
+     0     1     0     0     0    @PRINTF_L32D_112FPFPF
+     0     1     0     0     0    @const227
+     0     1     0     0     0    @goto10355
